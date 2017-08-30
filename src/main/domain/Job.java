@@ -35,7 +35,4 @@ public class Job implements Serializable {
         this.remark = remark;
     }
 
-    public Job(){
-        super();
-    }
 }
