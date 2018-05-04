@@ -7,7 +7,7 @@ import static main.util.common.Contants.USERTABLE;
 
 public class UserDynaSqlProvider {
 
-    public String selectWhitParam(Map<String, Object> params){
+    public String selectWithParam(Map<String, Object> params){
         String sql =  new SQL(){
             {
                 SELECT("*");

@@ -58,7 +58,7 @@
             <!-- 不能在页面使用java脚本 -->
             <scripting-invalid>true</scripting-invalid>
             <!-- 给所有的jsp页面导入要依赖的库，tablib.jsp就是一个全局的标签库文件  -->
-            <include-prelude>/WEB-INF/jsp/taglib.jsp</include-prelude>
+            <!--<include-prelude>/WEB-INF/jsp/taglib.jsp</include-prelude>-->
         </jsp-property-group>
     </jsp-config>
 

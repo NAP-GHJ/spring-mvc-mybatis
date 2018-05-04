@@ -13,7 +13,7 @@ import static main.util.common.Contants.NOTICETABLE;
 public interface NoticeDao {
 
     // 动态查询
-    @SelectProvider(type=NoticeDynaSqlProvider.class,method="selectWhitParam")
+    @SelectProvider(type=NoticeDynaSqlProvider.class,method="selectWithParam")
     @Results({
             @Result(id=true,column="id",property="id"),
             @Result(column="CREATE_DATE",property="createDate",javaType=java.util.Date.class),

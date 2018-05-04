@@ -17,10 +17,10 @@
 			            http://mybatis.org/schema/mybatis-spring
 			            http://mybatis.org/schema/mybatis-spring.xsd ">
 
-    <!-- mybatis:scan会扫描org.fkit.dao包里的所有接口当作Spring的bean配置，之后可以进行依赖注入-->
+    <!-- mybatis:scan会扫描main.dao包里的所有接口当作Spring的bean配置，之后可以进行依赖注入-->
     <mybatis:scan base-package="main.dao"/>
 
-    <!-- 扫描org.fkit包下面的java文件，有Spring的相关注解的类，则把这些类注册为Spring的bean -->
+    <!-- 扫描main包下面的java文件，有Spring的相关注解的类，则把这些类注册为Spring的bean -->
     <context:component-scan base-package="main"/>
 
     <!-- 使用PropertyOverrideConfigurer后处理器加载数据源参数 -->

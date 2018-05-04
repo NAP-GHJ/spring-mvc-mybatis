@@ -1,17 +1,19 @@
 package main.service;
 
 
+import main.domain.*;
+import main.util.tag.PageModel;
 
-        import java.util.List;
-        import domain.User;
+import java.util.List;
 
-/**
- * @Description: 人事管理服务层接口
- * <br>网站：<a href="http://www.fkit.org">疯狂Java</a>
- * @author 肖文吉	36750064@qq.com
- * @version V1.0
- */
-public interface HrmService {
+//
+///**
+// * @Description: 人事管理服务层接口
+// * <br>网站：<a href="http://www.fkit.org">疯狂Java</a>
+// * @author 肖文吉	36750064@qq.com
+// * @version V1.0
+// */
+public interface Service {
 
 
     /**
@@ -20,7 +22,7 @@ public interface HrmService {
      * @param  password
      * @return User对象
      * */
-    User login(String loginname,String password);
+    User login(String loginname, String password);
 
     /**
      * 根据id查询用户
@@ -33,7 +35,7 @@ public interface HrmService {
      * 获得所有用户
      * @return User对象的List集合
      * */
-    List<User> findUser(User user,PageModel pageModel);
+    List<User> findUser(User user, PageModel pageModel);
 
     /**
      * 根据id删除用户
@@ -59,7 +61,7 @@ public interface HrmService {
      * @param pageModel 分页对象
      * @return Dept对象的List集合
      * */
-    List<Employee> findEmployee(Employee employee,PageModel pageModel);
+    List<Employee> findEmployee(Employee employee, PageModel pageModel);
 
     /**
      * 根据id删除员工
@@ -161,7 +163,7 @@ public interface HrmService {
      * 获得所有公告
      * @return Notice对象的List集合
      * */
-    List<Notice> findNotice(Notice notice,PageModel pageModel);
+    List<Notice> findNotice(Notice notice, PageModel pageModel);
 
     /**
      * 根据id查询公告
